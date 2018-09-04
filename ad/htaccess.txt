@@ -1,0 +1,18 @@
+DirectoryIndex index.php
+
+# No directory listings
+IndexIgnore *
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Uncomment the following line if your webserver's URL is not directly related to physical file paths.
+    # Also uncomment it if you are on 1&1 hosting
+    #RewriteBase /
+
+    # Comment the following line if you have not a .well-known directory in the root folder.
+    RewriteRule ^(\.well-known/.*)$ $1 [L]
+
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
+</IfModule>

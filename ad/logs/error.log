@@ -1,0 +1,122 @@
+2018-09-04 09:55:07 Warning: Warning (2): include(/www/wwwroot/dibei.org/ad/vendor/composer/../../src/Controller/Admin/ActivationController.php): failed to open stream: No such file or directory in [/www/wwwroot/dibei.org/ad/vendor/composer/ClassLoader.php, line 444]
+Request URL: /ad/admin/activation
+Client IP: 111.37.29.39
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 152
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 70
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 92
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 60
+
+
+
+2018-09-04 09:55:07 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/www/wwwroot/dibei.org/ad/vendor/composer/../../src/Controller/Admin/ActivationController.php' for inclusion (include_path='.:/www/server/php/56/lib/php') in [/www/wwwroot/dibei.org/ad/vendor/composer/ClassLoader.php, line 444]
+Request URL: /ad/admin/activation
+Client IP: 111.37.29.39
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 152
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 70
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 92
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 83
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 62
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 81
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 90
+[main] - ROOT/webroot/index.php, line 60
+
+
+
+2018-09-04 09:55:07 Error: [Cake\View\Exception\MissingHelperException] Helper class AssetsHelper could not be found.
+Request URL: /admin/activation
+Stack Trace:
+#0 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Assets', NULL)
+#1 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('Assets')
+#2 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(905): Cake\View\HelperRegistry->__isset('Assets')
+#3 /www/wwwroot/dibei.org/ad/src/Template/Layout/error.ctp(17): Cake\View\View->__get('Assets')
+#4 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(1014): include('/www/wwwroot/di...')
+#5 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(973): Cake\View\View->_evaluate('/www/wwwroot/di...', Array)
+#6 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(644): Cake\View\View->_render('/www/wwwroot/di...')
+#7 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(602): Cake\View\View->renderLayout('', 'error')
+#8 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(358): Cake\View\View->render('error500', 'error')
+#9 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(337): Cake\Error\ExceptionRenderer->_outputMessageSafe('error500')
+#10 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(194): Cake\Error\ExceptionRenderer->_outputMessage('error400')
+#11 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(99): Cake\Error\ExceptionRenderer->render()
+#12 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(83): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(Cake\Routing\Exception\MissingControllerException), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /www/wwwroot/dibei.org/ad/webroot/index.php(60): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-04 09:55:19 Error: [Cake\View\Exception\MissingHelperException] Helper class AssetsHelper could not be found.
+Request URL: /member/dashboard
+Referer URL: http://dibei.org/ad/
+Stack Trace:
+#0 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Assets', NULL)
+#1 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('Assets')
+#2 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(905): Cake\View\HelperRegistry->__isset('Assets')
+#3 /www/wwwroot/dibei.org/ad/src/Template/Layout/error.ctp(17): Cake\View\View->__get('Assets')
+#4 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(1014): include('/www/wwwroot/di...')
+#5 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(973): Cake\View\View->_evaluate('/www/wwwroot/di...', Array)
+#6 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(644): Cake\View\View->_render('/www/wwwroot/di...')
+#7 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/View/View.php(602): Cake\View\View->renderLayout('', 'error')
+#8 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(358): Cake\View\View->render('error500', 'error')
+#9 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(337): Cake\Error\ExceptionRenderer->_outputMessageSafe('error500')
+#10 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(194): Cake\Error\ExceptionRenderer->_outputMessage('error500')
+#11 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(99): Cake\Error\ExceptionRenderer->render()
+#12 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(83): Cake\Error\Middleware\ErrorHandlerMiddleware->handleException(Object(Cake\View\Exception\MissingHelperException), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /www/wwwroot/dibei.org/ad/webroot/index.php(60): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-04 13:16:38 Error: Fatal Error (4): syntax error, unexpected '?' in [/www/wwwroot/dibei.org/ad/src/Template/Statistics/view_info.ctp, line 23]
+Request URL: /ad/Av21stD/info
+Client IP: 111.37.29.39
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2018-09-04 13:16:39 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?'
+Request URL: /ad/Av21stD/info
+Client IP: 111.37.29.39
+Stack Trace:
+#0 /www/wwwroot/dibei.org/ad/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/www/wwwroot/di...', 23)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
