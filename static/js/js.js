@@ -1,4 +1,4 @@
-document.writeln("<script src=\'https://www.layuicdn.com/layui-v2.5.6/layui.js\'></script>");
+document.writeln("<script src=\'https://cdn.jsdelivr.net/gh/saioc/Static/static/js/layui.js\'></script>");
 $(function() {
 $('.menu-goback').click(function() {
     $('body,html').animate({
@@ -138,7 +138,7 @@ function login(){
 				
 					tip=200;
 					$.ajax({
-						url:"https://www.yalayi.com/e/dongpo/username.php", 
+						url:"/username.php", 
 						type:'post',
 						data:{username:value},
 						dataType:'JSON',
@@ -164,7 +164,7 @@ function login(){
 				
 				tip=200;
 				$.ajax({
-					url:"https://www.yalayi.com/e/dongpo/pass.php", 
+					url:"/pass.php", 
 					type:'post',
 					data:{username:$('#username').val(),pass:value},
 					dataType:'JSON',
@@ -214,7 +214,7 @@ function res(){
 				
 					tip=200;
 					$.ajax({
-						url:"https://www.yalayi.com/e/dongpo/username.php", 
+						url:"/username.php", 
 						type:'post',
 						data:{username:value},
 						dataType:'JSON',
@@ -259,7 +259,7 @@ function res(){
 				}
 				tip=-200;
 				$.ajax({
-					url:"https://www.yalayi.com/e/dongpo/email.php", 
+					url:"/email.php", 
 					type:'post',
 					data:{email:value},
 					dataType:'JSON',
@@ -289,7 +289,7 @@ function chongzhi(){
 		}
 		var layer = layui.layer;
 		layer.closeAll();
-		 htmlobj=$.ajax({url:"https://www.yalayi.com/e/dongpo/pay.php",async:false});
+		 htmlobj=$.ajax({url:"/pay.php",async:false});
 		console.log(htmlobj);
 		layer.open({
 			type: 1
@@ -314,7 +314,7 @@ function hui() {
 				return;
 			}
             $.ajax({
-                url: 'https://www.yalayi.com/user/',
+                url: '/user/',
                 type: 'POST',
                 data: {
                     'sn': sn,
@@ -328,7 +328,7 @@ function hui() {
 						layer.msg('兑换码不存在或已过期！');
 						return;
 					}else if(arg==200){
-						layer.msg('兑换成功！',{time:3000},function(){window.location="https://www.yalayi.com/user/";});
+						layer.msg('兑换成功！',{time:3000},function(){window.location="/user/";});
 						return;
 					}
                 }
