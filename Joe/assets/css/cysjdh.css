@@ -1,0 +1,10 @@
+@import url("//at.alicdn.com/t/font_2611504_8nq4wp1bmb3.css");
+@media screen and (min-width:767px){#mobile-footer{display:none}}
+#mobile-footer{height:50px;background:#fafafa;position:fixed;bottom:0;left:0;border-top:0;width:100%;z-index:9999999}
+#mobile-menu{display:block}
+#mobile-menu:after{content:'';display:block;height:0;clear:both}
+#mobile-menu>li{width:20%;float:left;border-top:1px solid #e6e6eb;height:100%}
+#mobile-menu>li>a:hover{color:#000;}
+#mobile-menu>li>.active{color:#000;}
+#mobile-menu>li>a{text-align:center;color:#777;display:block;line-height:12px;height:100%}
+#mobile-menu>li>a>span{font-size:20px;display:block;line-height:30px}
