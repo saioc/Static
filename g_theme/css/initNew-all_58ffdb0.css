@@ -1,0 +1,437 @@
+.init-new {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.init-new .pan-logo {
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	width: 145px;
+	height: 30px;
+	cursor: pointer;
+	margin: 30px 0 0 30px
+}
+
+.init-new-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:9;
+	width: 455px;
+	height: 100%
+}
+
+.init-new-content .verify-form,.init-new-content .add-friend {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden
+}
+
+.verify-form {
+	width: 305px;
+	height: 400px
+}
+
+.add-friend {
+	display: none;
+	width: 331px;
+	height: 355px
+}
+
+.CMxQsC {
+	overflow: hidden;
+	width: 100%;
+	height: 97px
+}
+
+.avatar {
+	float: left;
+	overflow: hidden;
+	width: 97px;
+	height: 97px;
+	border-radius: 97PX;
+	background-repeat: no-repeat;
+	background-position: center center
+}
+
+.verify-property {
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 12px;
+	width: calc(100% - 97px);
+	height: 100%;
+	font-family: 'PingFang SC'
+}
+
+.verify-property .verify-user {
+	width: 100%;
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 24px;
+	height: 18px;
+	line-height: 18px
+}
+
+.verify-property .author-desc {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 16px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.verify-btn {
+	margin-top: 8px
+}
+
+.verify-btn .verify-friend,.verify-btn .verify-send {
+	box-sizing: border-box;
+	margin: 8px 0 0;
+	padding: 0 0 0 24px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	cursor: pointer
+}
+
+.verify-input .QKKaIE {
+	margin: 50px 0 29px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	width: 288px;
+	height: 54px;
+	border: 2px solid rgba(0,0,0,.05);
+	border-radius: 28px;
+	font-size: 18px;
+	text-align: left
+}
+
+.verify-input .QKKaIE:focus {
+	outline: 0;
+	border: 2px solid #5D98FF
+}
+
+.verify-input .QKKaIE::placeholder {
+	font-size: 16px
+}
+
+.verify-input .submit-btn-text {
+	width: 288px;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	border-radius: 28px;
+	font-weight: 700;
+	font-size: 18px;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,.05)
+}
+
+.ac-close .pickcode {
+	display: none
+}
+
+.ac-open .pickcode {
+	display: block
+}
+
+.verify-input .pickcode {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+	width: 288px;
+	height: 50px;
+	border-radius: 28px
+}
+
+.verify-input .pickcode .LIztsC {
+	box-sizing: border-box;
+	padding-left: 40px;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	font-size: 18px;
+	border-radius: 28px;
+	border: 2px solid rgba(0,0,0,.05)
+}
+
+.verify-input .pickcode .LIztsC:focus {
+	outline: 0;
+	border: 2px solid #5D98FF
+}
+
+.verify-input .pickcode .LIztsC::placeholder {
+	font-size: 16px
+}
+
+.verify-input .pickcode .vercodeWrap {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 50px;
+	border-radius: 25px;
+	background: #FFF;
+	border: 1px solid rgba(0,0,0,.05);
+	backdrop-filter: blur(3.5px);
+	cursor: pointer
+}
+
+.verify-input .pickcode .vercodeWrap img {
+	display: block;
+	float: left;
+	width: 75px;
+	height: 25px;
+	margin: 13px 0 13px 9px
+}
+
+.verify-input .pickcode .change-code {
+	float: right;
+	margin: 0 9px 0 0;
+	width: 24px;
+	height: 100%;
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-refresh_4cd8d5c.png) no-repeat center center;
+	background-size: 24px 24px
+}
+
+.tip {
+	display: block;
+	width: 100%;
+	height: 17px;
+	line-height: 17px;
+	margin-top: 19px;
+	font-size: 16px;
+	color: #FF436A
+}
+
+.add-friend .CMxQsC {
+	box-sizing: border-box;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	font-size: 24px
+}
+
+.add-friend .CMxQsC .addTitleBack {
+	float: left;
+	margin-right: 6px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer
+}
+
+.add-friend .desc {
+	width: 100%;
+	margin-top: 24px;
+	font-size: 16px;
+	line-height: 20px
+}
+
+.add-friend .content {
+	margin: 24px 0;
+	box-sizing: border-box;
+	padding: 16px;
+	width: 288px;
+	height: 150px;
+	line-height: 14px;
+	border-radius: 9px;
+	font-size: 16px;
+	resize: none
+}
+
+.add-friend .content:focus {
+	outline: 0
+}
+
+.add-friend .NIaNvPb {
+	width: 288px;
+	height: 36px
+}
+
+.add-friend .NIaNvPb .addBtnCancel,.add-friend .NIaNvPb .addBtnSure {
+	float: left;
+	width: 128px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 28px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer
+}
+
+.add-friend .NIaNvPb .addBtnCancel {
+	margin-left: 8px
+}
+
+.add-friend .NIaNvPb .addBtnSure {
+	margin-left: 16px;
+	color: #0095FF;
+	background: #fff
+}
+
+@font-face {
+	font-family:'PingFang SC';font-weight:400;font-style:normal;src:url(https://nd-static.bdstatic.com/m-static/disk-header/header/css/fonts/yunfont.eot?t=1561549926223?fo24w5);src:url(https://nd-static.bdstatic.com/m-static/disk-header/header/css/fonts/yunfont.eot?t=1561549926223?fo24w5#iefix) format("embedded-opentype"),url(https://nd-static.bdstatic.com/m-static/disk-header/header/css/fonts/yunfont.ttf?t=1561549926223?fo24w5) format("truetype"),url(https://nd-static.bdstatic.com/m-static/disk-header/header/css/fonts/yunfont.woff?t=1561549926223?fo24w5) format("woff"),url(https://nd-static.bdstatic.com/m-static/disk-header/header/css/fonts/yunfont.svg?t=1561549926223?fo24w5#yunfont) format("svg")
+}
+
+.theme-white.init-new {
+	background: #DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center;
+	background-size: cover
+}
+
+.theme-white .pan-logo {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/pan-logo-blue_ec2c791.png) no-repeat center center;
+	background-size: 145px auto
+}
+
+.theme-white .init-new-content {
+	display: block;
+	background: rgba(255,255,255,.4);
+	backdrop-filter: blur(10px)
+}
+
+.theme-white .verify-property .verify-user,.theme-white .verify-btn .verify-friend,.theme-white .verify-btn .verify-send,.theme-white .add-friend .CMxQsC,.theme-white .add-friend .desc,.theme-white .verify-input .QKKaIE,.theme-white .verify-input .pickcode .LIztsC {
+	color: #000
+}
+
+.theme-white .verify-input .QKKaIE,.theme-white .verify-input .pickcode .LIztsC {
+	background: rgba(0,0,0,.2)
+}
+
+.theme-white .verify-input .QKKaIE::placeholder,.theme-white .verify-input .pickcode .LIztsC::placeholder {
+	color: #000;
+	opacity: .8
+}
+
+.theme-white .verify-property .author-desc {
+	color: #000;
+	opacity: .6
+}
+
+.theme-white .verify-friend {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-add-black_348389d.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-white .verify-wait {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-wait-black_1bd75ad.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-white .verify-send {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-msg-black_fb533ec.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-white .add-friend .CMxQsC .addTitleBack {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/arrow-left_d05c699.png) no-repeat center center;
+	background-size: 24px 24px
+}
+
+.theme-white .add-friend .content {
+	background: rgba(255,255,255,.15);
+	border: 1px solid rgba(0,0,0,.2);
+	color: #000
+}
+
+.theme-white .add-friend .NIaNvPb .addBtnCancel {
+	color: #000;
+	background: rgba(255,255,255,.5);
+	border: 1px solid rgba(0,0,0,.05)
+}
+
+.theme-white .verify-input .submit-btn-text {
+	color: #fff;
+	background: #0095FF
+}
+
+.theme-dark.init-new {
+	background: #DCEFFE url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/init-bg_1708266.png) no-repeat center center;
+	background-size: cover
+}
+
+.theme-dark.init-new .pan-logo {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/pan-logo_c788347.png) no-repeat center center;
+	background-size: 145px auto;
+}
+
+.theme-dark .init-new-content {
+	display: block;
+	background: rgba(20,20,20,.4);
+	backdrop-filter: blur(10px);
+}
+
+.theme-dark .verify-property .verify-user,.theme-dark .verify-btn .verify-friend,.theme-dark .verify-btn .verify-send,.theme-dark .add-friend .CMxQsC,.theme-dark .add-friend .desc,.theme-dark .verify-input .QKKaIE,.theme-dark .verify-input .pickcode .LIztsC {
+	color: #fff;
+}
+
+.theme-dark .verify-input .QKKaIE,.theme-dark .verify-input .pickcode .LIztsC {
+	background: rgba(51,51,51,.6)
+}
+
+.theme-dark .verify-input .QKKaIE::placeholder,.theme-dark .verify-input .pickcode .LIztsC::placeholder {
+	color: #fff;
+	opacity: .8
+}
+
+.theme-dark .verify-property .author-desc {
+	color: #fff;
+	opacity: .6
+}
+
+.theme-dark .verify-friend {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-add_545aeba.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-dark .verify-wait {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-wait_06e8e1a.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-dark .verify-send {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/icon-friend-msg_24e7375.png) no-repeat left center;
+	background-size: 20px 20px
+}
+
+.theme-dark .add-friend .CMxQsC .addTitleBack {
+	background: url(https://nd-static.bdstatic.com/m-static/disk-share/widget/pageModule/init-new/image/arrow-left-white_7cdbd79.png) no-repeat center center;
+	background-size: 24px 24px
+}
+
+.theme-dark .add-friend .content {
+	background: rgba(247,249,252,.15);
+	border: 1px solid rgba(255,255,255,.1);
+	color: #fff;
+}
+
+.theme-dark .add-friend .NIaNvPb .addBtnCancel {
+	color: #fff;
+	background: rgba(255,255,255,.1)
+}
+
+.theme-dark .verify-input .submit-btn-text {
+	color: #0095FF;
+	background: #fff;
+}
+
+iframe {
+	border: 0
+}
