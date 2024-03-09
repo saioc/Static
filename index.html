@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>纯CSS实现全屏滚动贴合效果（竖屏）</title>
+	<style>
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* 100%窗口宽度和高度 */
+    width: 100vw;
+    height: 100vh;
+    /* 设置滚动贴合的方式：沿Y轴滚动 mandatory表示强制滚动 */
+    scroll-snap-type: y mandatory;
+    /* 需要把滚动条设置到直接父容器，scroll-snap-type才能生效 */
+    /* 溢出时，垂直保留滚动条，水平隐藏滚动条 */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container .contdiv{
+    /* 100%窗口宽度和高度 */
+    width: 100vw;
+    height: 100vh;
+    /* 弹性布局 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 通过var函数调用自定义属性--c，设置各个div的背景颜色 */
+    background-color: var(--c);
+    font-size: 200px;
+    color: #fff;
+    /* 设置下一页的内容会滚动贴合到顶部 */
+    scroll-snap-align: start;
+}
+{
+background: #00b6cc;
+
+background: #00727f;
+background: #00e4ff;
+background: #4cecff;
+}
+
+.num-1{background:#fc4274;}
+.num-2{background:#ff8155;}
+.num-3{background:#00b6cc;}
+.num-4{background:#817AE3;}
+.num-5{background:#4cecff;}
+.num-6{background:#FBAB7E;}
+.num-7{background:#fc4274;}
+.num-8{background:#ff8155;}
+.num-9{background:#00e4ff;}
+.num-10{background:#FBAB7E;}
+.num-11{background:#fc4274;}
+.num-12{background:#ff8155;}
+.num-13{background:#00727f;}
+.num-14{background:#817AE3;}
+.num-15{background:#FF6A88;}
+.num-16{background:#FBAB7E;}
+.num-17{background:#fc4274;}
+.num-18{background:#ff8155;}
+.num-19{background:#4cecff;}
+.num-20{background:#FBAB7E;}
+	</style>
+<style> /*设置奇数行颜色*/ table tr:nth-child(odd) { background: rgb(178, 178, 179); } 
+/*设置偶数行颜色*/ table tr:nth-child(even) { background: rgb(241, 241, 241); } 
+/*设置鼠标聚焦到行上是凸显*/ table tr:hover{ background-color: rgb(121, 121, 121); } </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --c为自定义属性（颜色值），可通过var函数进行调用 -->
+        <div class="contdiv" style="--c: lightcoral;">1</div>
+        <div class="contdiv" style="--c: lightseagreen;">2</div>
+        <div class="contdiv" style="--c: lightsalmon;">3</div>
+        <div class="contdiv" style="--c: lightskyblue;">4</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
